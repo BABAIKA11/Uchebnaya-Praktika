@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Converter</title>
+</head>
+<body>
+<form method="post" action="/converter">
+<select name="Select1">
+    <option>Рубль</option>
+    <option>Доллар</option>
+    <option>Евро</option>
+</select>
+    <input type="input" name="convInt1" >
+<br><br>
+
+<select name="Select2">
+    <option>Рубль</option>
+    <option>Доллар</option>
+    <option>Евро</option>
+</select>
+    <h1 th:text = "${resultConverter}"></h1>
+<br>
+
+<input type="submit" value="CONVERT">
+
+</form>
+</body>
+</html>
